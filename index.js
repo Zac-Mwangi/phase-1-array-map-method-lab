@@ -12,5 +12,14 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  
+  // let result =tutorials.map((tutorial) => tutorial.split(" ").map((passdss)=>passdss[0].toUpperCase() + passdss.slice(1)).join(" "))
+
+
+  // first map splits the elements in the array where there is a single space - 
+  // Split - change a string into an array of substring and returns the array
+
+  // second map takes the char
+
+  return tutorials.map((tutorial) => tutorial.split(" ").map((passdss)=>passdss.charAt(0).toUpperCase() + passdss.slice(1)).join(" "))
 }
